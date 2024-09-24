@@ -1,0 +1,140 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style type="text/css">
+    
+ 
+    #banner{
+        background-image:url("../Content/images/images.jpg");
+        background-size:cover;
+        background-position:center;
+        height:200px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .banner-content{
+        text-align:center;
+
+    }
+    .banner-content h2{
+       font-size:2.5rem;
+
+    }
+    .banner-content p {
+        font-size:2rem;
+    }
+    .btn{
+        display:inline-block;
+        padding: 5px 20px;
+        background-color:darksalmon;
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+    }
+    .search-section{
+        text-align:center;
+    }
+    .search-section h2{
+        font-size:24px;
+        margin-bottom: 20px;
+          
+    }
+    .search-container{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    }
+    #search-input{
+        width:500px;
+        padding:15px;
+        border:1px solid #ccc;
+        border-radius:5px 0 0 5px;
+    }
+    #search-button{
+        padding: 15px 25px;
+        background-color:#ff006e;
+        color: #fff;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    #search-button:hover{
+        background-color:#555   
+    }
+    #featureProb{
+        text-align:center;
+    }
+    #featureProb h2{
+        font-size:3rem;
+        margin-bottom: 20px;
+    }
+    .prodContainer{
+        display:flex;
+        justify-content:center;
+        gap: 10px;
+    }
+    .product-item{
+        width:200px;
+    }
+    .product-item img{
+       max-width:200px;
+    }
+    .product-item h3{
+        font-size:16px;
+        color:black;
+        margin:10px 0px;
+    }
+    .prodDesciption{
+        font:arial;
+        font-size:12px;
+        color:dimgray;
+    }
+    .prodPrice {
+        font-size: 12px;
+        color:black;
+        font-weight:bold;
+    }
+</style>
+  <section id="banner" >
+      <div class="banner-content">
+          <h2>Welcom to the shopping store</h2>
+          <p>Style for cute girls</p>
+          <a href=" #" class="btn">Bắt đầu mua sắm</a>
+      </div>
+  </section>
+<section id="content">
+    <section class="search-section">
+        <h2>Tìm kiếm sản phẩm</h2>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Nhập từ khóa..."/>
+            <button id="search-button">Tìm kiếm</button>
+        </div>
+    </section>
+    <section id="featureProb" class="content-section">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="prodContainer">>
+        <div class="product-item">
+            <img src="~/Content/images/áo.jpg" />
+            <h3>Áo croptop trắng</h3>
+            <p class="prodDesciption">Freesize</p>
+            <p class="prodPrice">199.000đ</p>
+        </div>
+        <div class="product-item">
+            <img src="~/Content/images/dam.jpg" />
+            <h3>Đầm đen sang chảnh</h3>
+            <p class="prodDesciption">Đủ size S/M/L</p>
+            <p class="prodPrice">499.000k</p>
+        </div>
+        <div class="product-item">
+            <img src="~/Content/images/vay.jpg" />
+            <h3>Chân váy ngắn xinh xẻo</h3>
+            <p class="prodDesciption">Dày dặn,có 4 màu</p>
+            <p class="prodPrice">279.000k</p>
+        </div>
+        </div>
+    </section>
+    <section id="productList">
+
+    </section>
+</section>

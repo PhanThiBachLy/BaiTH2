@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+    <title>
+        Welcome page: sử dụng 1 form cho phép người nhập tên, và hiển thị lời chào
+    </title>
+    <script src="~/Scripts/myJS/UserJS.js"></script>
+    
+}
+<body>
+    <form name="Welcome">
+        <br />
+        <input type="text" id="iName" value="Thủy thủ mặt trăng"
+               maxlength="50" max="30" />
+        <input type="button" id="btnWelcome" value="Welcome"
+               onclick="DisplayWelcome(iName.value);" />
+    </form>
+    <script language="javascript">
+        function DisplayWelcome(msg) {
+            alert("hello" + msg);
+           /* window.document.write("Hello" + msg);*/
+        }
+    </script>
+    
+</body>
+

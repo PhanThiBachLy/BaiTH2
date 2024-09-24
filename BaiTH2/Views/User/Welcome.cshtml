@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<html>
+<head>
+    <title>Welcome page: su dung hop thoai Prompt để nhập dữ liệu và sử dụng câu lệnh document.write để hiển thị dữ liệu
+</title>
+</head>
+<body>
+<script language="javascript">
+    var Ten, Tuoi;//Khai bao bien
+    //Nhap du lieu
+    Ten = prompt("Hãy nhập tên của bạn:", "")
+    Tuoi = prompt("Hãy nhập tuổi của bạn:", "10")
+    //Hien thi du lieu
+    window.document.write("Hello <b>"+ Ten+" </b > <br />");
+    window.document.write("Tuoi cua ban la:" + Tuoi);
+</script>
+</body>
+</html>
